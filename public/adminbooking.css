@@ -1,0 +1,25 @@
+  .delete{
+    float: right;
+    margin-right: 35%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #fff;
+    border-radius: 20px;
+    width: 6vw;
+    text-transform: uppercase;
+    font-weight: 555;
+    font-family: 'Nunito', sans-serif;
+    background: rgb(130, 5, 5);
+    cursor: pointer;
+  }
+
+
+.delete:hover{
+    background: red;
+}
+
+h1{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom:1%;
+}

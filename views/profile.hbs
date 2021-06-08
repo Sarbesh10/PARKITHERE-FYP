@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/profile.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <title>View Profile</title>
+</head>
+<body>
+  <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" style="padding-top:30px">
+          {{#if false}}
+          <div class="alert alert-danger col-sm-12" >{{message}}</div>
+          {{/if}}
+          <div class="panel panel-info">
+            <div class="panel-heading">
+            </div>
+            <div class="panel-body">
+
+            {{#each prfl}}
+            <div class="arrange">
+            <label>Full Name: </label>
+            <p id="align">{{this.name}}</p>
+            </div>
+
+            <div class="arrange">
+            <label>Contact Address: </label>
+            <p id="align">{{this.contact}}</p>
+            </div>
+
+            <div class="arrange">
+            <label>Email Address: </label>
+            <p id="align">{{this.email}}</p>
+            </div>
+                <a href="/eprofile" class="button">Edit Profile</a>
+            {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

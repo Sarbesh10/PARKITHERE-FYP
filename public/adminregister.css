@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+ }
+ body{
+    background-image: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1447&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ .wrapper{
+    max-height: 100vh;
+    height: 100%;
+    max-width: 50vw;
+    width: 45%;
+    float: left;
+    background: #fff;
+    margin: 10% 2% 2% 2%;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.125);
+    padding: 30px;
+ }
+ 
+ .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px 0px 20px 0px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: left;
+ }
+ 
+ .wrapper .signupForm{
+    width: 100%;
+ }
+ 
+ .wrapper .signupForm .entry{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .wrapper .signupForm .entry label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+ }
+ 
+ .wrapper .signupForm .entry .input,
+ .wrapper .signupForm .entry .textarea{
+   width: 100%;
+   outline: none;
+   border: 1px solid #d5dbd9;
+   font-size: 15px;
+   padding: 8px 10px;
+   border-radius: 3px;
+   transition: all 0.3s ease;
+ }
+ 
+ .wrapper .signupForm .entry .textarea{
+   width: 100%;
+   height: 100px;
+   resize: none;
+ }
+ 
+ .wrapper .signupForm .entry .custom_select{
+   position: relative;
+   width: 100%;
+   height: 37px;
+ }
+ 
+ .wrapper .signupForm .entry .custom_select:before{
+   content: "";
+   position: absolute;
+   top: 12px;
+   right: 10px;
+   border: 8px solid;
+   border-color: #d5dbd9 transparent transparent transparent;
+   pointer-events: none;
+ }
+ 
+ .wrapper .signupForm .entry .custom_select select{
+   -webkit-appearance: none;
+   -moz-appearance:   none;
+   appearance:        none;
+   outline: none;
+   width: 100%;
+   height: 100%;
+   border: 0px;
+   padding: 8px 10px;
+   font-size: 15px;
+   border: 1px solid #d5dbd9;
+   border-radius: 3px;
+ }
+ 
+ 
+ .wrapper .signupForm .entry .input:focus,
+ .wrapper .signupForm .entry .textarea:focus,
+ .wrapper .signupForm .entry .custom_select select:focus{
+   border: 1px solid #fec107;
+ }
+ 
+ .wrapper .signupForm .entry p{
+    font-size: 14px;
+    color: #757575;
+ }
+ .wrapper .signupForm .entry .check{
+   width: 15px;
+   height: 15px;
+   position: relative;
+   display: block;
+   cursor: pointer;
+ }
+ .wrapper .signupForm .entry .check input[type="checkbox"]{
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+ }
+ .wrapper .signupForm .entry .check .checkmark{
+   width: 15px;
+   height: 15px;
+   border: 1px solid #fec107;
+   display: block;
+   position: relative;
+ }
+ .wrapper .signupForm .entry .check .checkmark:before{
+   content: "";
+   position: absolute;
+   top: 1px;
+   left: 2px;
+   width: 5px;
+   height: 2px;
+   border: 2px solid;
+   border-color: transparent transparent #fff #fff;
+   transform: rotate(-45deg);
+   display: none;
+ }
+ .wrapper .signupForm .entry .check input[type="checkbox"]:checked ~ .checkmark{
+   background: #fec107;
+ }
+ 
+ .wrapper .signupForm .entry .check input[type="checkbox"]:checked ~ .checkmark:before{
+   display: block;
+ }
+ 
+ .wrapper .signupForm .entry .btn{
+   width: 50%;
+   margin-left: 25%;
+   padding: 10px;
+   font-size: 15px; 
+   border: 0px;
+   background:  #fec107;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 20px;
+   outline: none;
+  }
+ 
+ .wrapper .signupForm .entry .btn:hover{
+   background: #ffd658;
+ }
+ 
+ .wrapper .signupForm .entry:last-child{
+   margin-bottom: 0;
+ }
+ 
+ @media (max-width:420px) {
+   .wrapper .signupForm .entry{
+     flex-direction: column;
+     align-items: flex-start;
+   }
+   .wrapper .signupForm .entry label{
+     margin-bottom: 5px;
+   }
+   .wrapper .signupForm .entry.terms{
+     flex-direction: row;
+   }
+ }
+ 
+ .alreadymember{
+     text-align: center;
+ }
+
+ a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    color: red;
+  }

@@ -1,0 +1,11 @@
+html{
+    background-image: url("https://images.unsplash.com/photo-1614292493063-ccfd9dd1f908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=925&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+h1{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom:1%;
+}

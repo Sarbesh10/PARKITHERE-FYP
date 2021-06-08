@@ -1,0 +1,92 @@
+
+  body{
+    margin:0;
+    font-size:17px;
+    line-height:1.6;
+  }
+
+  .showcase{
+    height:100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+  }
+
+  .showcase h1{
+    font-size:40px;
+    width: 100vw;
+    font-family:Garamond ;
+    padding: 3vh 0 3vh 0;
+    margin-bottom: 11%;
+    color: #fff;
+  }
+  
+  .showcase h4{
+      padding: 8vh 0vh 2vh 0vh;
+      font-size: 30px;
+      font-family: Baramond;
+      color: #fff;
+  }
+  
+  .showcase .p1{
+      padding: 6vw 0vw 0vw 30vw;
+      float: left;
+      color: #fff;
+  }
+
+  .showcase .button1{
+    background-color: rgb(68, 180, 66);
+    font-size:25px;
+    text-decoration:none;
+    color:#fff;
+    border:#926239 1px solid;
+    padding: 10px 20px;
+    border-radius:10px;
+    margin :8vw -8vw;
+    float: left;
+  }
+  
+  .showcase .button1:hover{
+    background:#24d459;
+    color:#fff;
+  }
+
+  .showcase .p2{
+    padding: 6vw 30vw 0vw 0vw;
+    float: right;
+    color: #fff;
+  }
+
+  .showcase .button2{
+    background-color: rgb(189, 54, 54);
+    font-size:25px;
+    text-decoration:none;
+    color:#fff;
+    border:#926239 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin: 8vw -8vw;
+    float: right;
+  }
+  
+  .showcase .button2:hover{
+    background:#ff3300;
+    color:#fff;
+  }
+  
+  .showcase .adminlogin{
+    background-color: rgba(71, 104, 28, 0.76);
+    font-size:25px;
+    text-decoration:none;
+    color:#fff;
+    border:#926239 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+  }
+
+  .showcase .adminlogin:hover{
+    background: #926239;
+    color: #fff;
+  }

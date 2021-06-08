@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+
+  <title>Park-It-Here: Booking</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="/booking.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="wrapper">
+    {{#if message }}
+            <h4 class="alert alert-danger mt-0">{{message}}</h4>
+    {{/if}}
+    <h1>Book Now</h1>
+    <form action="/auth/booking" method="POST" >
+        <div class="entry">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+        </div>
+
+        <div class="entry">
+            <label>Registration Number</label>
+            <input type="text" class="form-control" id="registrationno" name="registrationno" placeholder="Registration Number">
+       </div>
+
+       <div class="entry">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+        </div>
+
+        <div class="entry">
+            <label for="date">Date</label>
+            <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+        </div>
+
+        <div class="entry">
+            <label for="time">Time</label>
+            <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+        </div>
+        
+        <div class="entry">
+            <label for="slotno">Slot Number</label>
+            <input type="number" class="form-control" id="slotno" name="slotno" placeholder="Slot Number">
+        </div>
+
+        <div class="entry">
+        <button type="submit" class="btn">Book</button>
+        </div>
+
+    </form>
+    </div>
+
+</body>
+</html>

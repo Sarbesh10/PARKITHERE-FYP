@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/receipt.css">
+    <title>Receipt</title>
+</head>
+<body>
+    <h1>Parking Receipt</h1>
+    <form action="/auth/receipt" method="GET">
+        
+        <p id="demo"></p>
+        <script type="text/javascript">
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d;
+        </script>
+
+        {{#each rcpt}}
+        <div class="arrange">
+            <label for="name">Full Name: </label>
+            <p id="align">{{this.name}}</p>
+        </div>
+        
+
+        <div class="arrange">
+            <label for="registrationno">Registration Number: </label>
+            <p id="align">{{this.registrationno}}</p>
+       </div>
+        
+        <div class="arrange">
+            <label for="slotno">Slot Number: </label>
+            <p id="align">{{this.slotno}}</p>
+        </div>
+        
+        <div class="arrange">
+            <label for="date">Date: </label>
+            <p id="align">{{this.date}}</p>
+        </div>
+        
+        <div class="arrange">
+            <label for="time">Time: </label>
+            <p id="align">{{this.time}}</p>
+        </div>
+        {{/each}}
+
+        <p id="note">*The vehicle can be parked at the rate of Rs. 40 per hour. Failure to show the receipt will cost a fine of Rs. 200.*</p>
+    </form>
+
+</body>
+</html>

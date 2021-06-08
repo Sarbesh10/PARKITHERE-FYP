@@ -1,0 +1,77 @@
+.bg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.superior{
+    box-sizing: border-box;
+}
+.column1{
+    float: left;
+    width: 50%;
+}
+
+.column2{
+    float: left;
+    width: 50%;
+}
+
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column1, .column2 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card1{
+        float: left;
+        width: 75%;
+        border-radius: 50px;
+        font-size: x-large;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #f1f1f1;
+        margin-left: 75px;
+        margin-bottom: 100px;
+  }
+
+  .card1:hover, .card2:hover{
+    color: rgb(209, 197, 32);
+  }
+
+  .card2{
+        float: right;
+        width: 75%;
+        border-radius: 50px;
+        font-size: x-large;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #f1f1f1;
+        margin-right: 75px;
+        margin-top: 75px;
+        margin-bottom: 25px;
+  }
+
+  a:link, a:visited {
+    color: black;
+    text-decoration: none;
+  }
